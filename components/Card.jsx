@@ -2,9 +2,9 @@ export default function Card(props) {
   return (
     <div>
       <div className="card">
-        <img src={`images/${props.coverImg}`} className="card-img" />
+        <img src={`/airbnb-clone/images/${props.coverImg}`} className="card-img" />
         <div className="rating">
-          <img src={`images/star.png`} className="star-icon" />
+          <img src={`/airbnb-clone/images/star.png`} className="star-icon" />
           <span>
             {props.stats.rating}
             <span className="gray-text">
