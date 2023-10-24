@@ -45,8 +45,20 @@ nav {
 .card {
   display: grid;
   width: 200px;
+  position: relative;
 }
 
+.badge {
+  position: absolute;
+  background-color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 2px;
+  top: 8px;
+  left: 8px;
+  margin: 0;
+  padding: 4px;
+}
 
 .star-icon {
   height: 14px;

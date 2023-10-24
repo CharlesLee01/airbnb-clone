@@ -1,7 +1,16 @@
 export default function Card(props) {
+  let badge;
+  
+  if (props.openSpots === 0) {
+    badge = 'SOLD OUT';
+  } else if (props.location === 'Online') {
+    badge = 'ONLINE';
+  }
+
   return (
     <div>
       <div className="card">
+        {badge && <p className="badge">{badge}</p>}
         <img src={`/airbnb-clone/images/${props.coverImg}`} className="card-img" />
         <div className="rating">
           <img src={`/airbnb-clone/images/star.png`} className="star-icon" />
