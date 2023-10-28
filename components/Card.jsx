@@ -13,7 +13,7 @@ export default function Card(props) {
         {badge && <p className="badge">{badge}</p>}
         <img src={`/airbnb-clone/images/${props.coverImg}`} className="card-img" />
         <div className="rating">
-          <img src={`/airbnb-clone/images/star.png`} className="star-icon" />
+          <img src="images/star.png" className="star-icon" />
           <span>
             {props.stats.rating}
             <span className="gray-text">
